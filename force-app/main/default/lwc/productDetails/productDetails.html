@@ -1,0 +1,33 @@
+<template>
+    <lightning-card>  
+        <h1 slot="title">
+        <lightning-icon icon-name="standard:timesheet" alternative-text="Event" size="small"></lightning-icon>
+        &nbsp;Product Details
+    </h1>
+    </lightning-card>
+    <lightning-card>
+    <!-- <lightning-layout>
+     -->
+    <lightning-record-edit-form object-api-name="Product2">
+        <lightning-messages></lightning-messages>
+        <div class="slds-m-around_medium">
+            <lightning-input-field field-name=Account__c></lightning-input-field>
+            <lightning-input-field field-name=Contact__c></lightning-input-field>
+            <lightning-input-field field-name=Name></lightning-input-field>
+            <lightning-input-field field-name=Unit_Price__c></lightning-input-field>
+           
+
+            <lightning-layout>
+                <div class="slds-align_absolute-right">
+                    <lightning-button variant="Brand" onclick={handleSubmit}  name="Continue" label="Continue">
+                    </lightning-button>
+                </div>
+            </lightning-layout>
+ 
+        </div>
+    </lightning-record-edit-form>
+<!-- </lightning-layout> -->
+
+</lightning-card>
+    
+</template>

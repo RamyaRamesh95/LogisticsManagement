@@ -1,0 +1,37 @@
+<template>
+    <lightning-card >
+    <h1 slot="title">
+        <lightning-icon icon-name="standard:timesheet" alternative-text="Event" size="small"></lightning-icon>
+        &nbsp;Shipping Address
+    </h1>
+    </lightning-card>
+    <lightning-card>
+    <!-- <lightning-layout>
+     -->
+    <lightning-record-edit-form object-api-name="Account">
+        <lightning-messages></lightning-messages>
+        <div class="slds-m-around_medium">
+            
+            <lightning-input-field field-name=Name label="Sender Name"></lightning-input-field>
+            <lightning-input-field field-name=Phone></lightning-input-field>
+            <lightning-input-field field-name=Email></lightning-input-field>
+            <lightning-input-field field-name=ShippingAddress></lightning-input-field>
+            <!-- <lightning-input-field field-name=Postal_Code__c></lightning-input-field>
+            <lightning-input-field field-name=City__c></lightning-input-field>
+            <lightning-input-field field-name=State__c></lightning-input-field>
+            <lightning-input-field field-name=Country__c></lightning-input-field> -->
+
+            <lightning-layout>
+                <div class="slds-align_absolute-right">
+                    <lightning-button variant="Brand" onclick={handleSubmit} name="Continue" label="Continue">
+                    </lightning-button>
+                </div>
+            </lightning-layout>
+    
+        </div>
+    </lightning-record-edit-form>
+<!-- </lightning-layout>
+  -->
+</lightning-card>
+    
+</template>
