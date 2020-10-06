@@ -1,10 +1,9 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, track, api } from "lwc";
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import { NavigationMixin } from 'lightning/navigation';
 
 
-export default class ShipmentDetails extends NavigationMixin(LightningElement) {
-
+export default class payment extends NavigationMixin(LightningElement) {
     handleSubmit() {
         var isVal = true;
         this.template.querySelectorAll('lightning-input-field').forEach(element => {
@@ -17,27 +16,13 @@ export default class ShipmentDetails extends NavigationMixin(LightningElement) {
             this.dispatchEvent(
                 new ShowToastEvent({
                     title: 'Success',
-                    message: 'Product Details successfully created',
+                    message: 'Payment Successful',
                     variant: 'success',
                 }),
             );
-            
-        } 
-        this[NavigationMixin.Navigate]({
-            type: "standard__component",
-            attributes: {
-                componentName: "c__navigateToPA"
-            },
-            state: {
-            
-            }
-        }); 
-
-
-
         
     }
-    
-   
-    
+
+}
+
 }

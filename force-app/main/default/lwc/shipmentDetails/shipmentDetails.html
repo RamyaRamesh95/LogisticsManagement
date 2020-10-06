@@ -2,7 +2,7 @@
     <lightning-card>
     <h1 slot="title">
         <lightning-icon icon-name="standard:timesheet" alternative-text="Event" size="small"></lightning-icon>
-        &nbsp;Ship The Product
+        &nbsp; Ship The Product
     </h1>
 </lightning-card>
     <lightning-card> 
@@ -13,8 +13,8 @@
         <lightning-messages></lightning-messages>
         <div class="slds-m-around_medium" >
             <lightning-input-field field-name=Product__c></lightning-input-field>
-            <lightning-input-field field-name=Quantity__c></lightning-input-field>            
-            <lightning-input-field field-name=Unit_Price__c></lightning-input-field>
+            <lightning-input-field field-name=Quantity__c></lightning-input-field>          
+            
             <lightning-input-field field-name=Weight_KG__c></lightning-input-field>
             <lightning-input-field field-name=Height__c></lightning-input-field>
             <lightning-input-field field-name=Length_CM__c></lightning-input-field>
@@ -22,14 +22,11 @@
 
 
             <lightning-layout>
-                <div class="slds-align_right">
+                <div class="slds-align_absolute-center">
                     <lightning-button variant="Brand" onclick={handleSubmit}  name="Continue" label="Continue">
                     </lightning-button>
                 </div>
-                <div class="slds-align_right">
-                    <lightning-button variant="Brand" onclick={Get_Quote}  name="Continue" label="Continue">
-                    </lightning-button>
-                </div>
+                
             </lightning-layout>
  
         </div>

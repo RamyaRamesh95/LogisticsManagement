@@ -2,26 +2,24 @@
     <lightning-card>  
         <h1 slot="title">
         <lightning-icon icon-name="standard:timesheet" alternative-text="Event" size="small"></lightning-icon>
-        &nbsp; DELIVERY ADDRESS
+        &nbsp;Delivery Address
     </h1>
     </lightning-card>
     <lightning-card>
     <!-- <lightning-layout>
      -->
-    <lightning-record-edit-form object-api-name="Contact">
+    <lightning-record-edit-form object-api-name="Shipment_Tracking__c">
         <lightning-messages></lightning-messages>
         <div class="slds-m-around_medium">
-            <label for="fieldid">Sender Account</label>
-            <lightning-input-field field-name=AccountId id="fieldid" variant="label-hidden"></lightning-input-field>
-            <label for="fieldn">Recipient Name</label>
-            <lightning-input-field field-name=Name></lightning-input-field>
-            <lightning-input-field field-name=Phone></lightning-input-field>
+            <lightning-input-field field-name=Order_Tracking__c></lightning-input-field>
+            <!-- <lightning-input-field field-name=Phone></lightning-input-field>
             <lightning-input-field field-name=Email></lightning-input-field>
             <lightning-input-field field-name=MailingAddress></lightning-input-field>
-    
+            <lightning-input-field field-name=AccountId></lightning-input-field> -->
+
 
             <lightning-layout>
-                <div class="slds-align_absolute-center">
+                <div class="slds-align_absolute-right">
                     <lightning-button variant="Brand" onclick={handleSubmit}  name="Continue" label="Continue">
                     </lightning-button>
                 </div>

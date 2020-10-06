@@ -4,6 +4,8 @@ import { NavigationMixin } from 'lightning/navigation';
 
 
 export default class ShippingAddress extends NavigationMixin(LightningElement) {
+    @api recordId;
+    @api objectname;
 
     handleSubmit() {
         var isVal = true;

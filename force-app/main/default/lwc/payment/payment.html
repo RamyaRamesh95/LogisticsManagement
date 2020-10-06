@@ -1,0 +1,30 @@
+<template>
+    <lightning-card>  
+        <h1 slot="title">
+        <lightning-icon icon-name="standard:timesheet" alternative-text="Event" size="small"></lightning-icon>
+        &nbsp; PAYMENT
+    </h1>
+    </lightning-card>
+    <lightning-card>
+    <lightning-record-edit-form object-api-name="Payment__c">
+        <lightning-messages></lightning-messages>
+        <div class="slds-m-around_medium">
+            <lightning-input-field field-name=Card_Number__c></lightning-input-field>
+            <lightning-input-field field-name=Expiry__c></lightning-input-field>  
+            <lightning-input-field field-name=CVV__c></lightning-input-field>         
+        </div>         
+            
+
+        <lightning-layout>
+                <div class="slds-align_absolute-center">
+                    <lightning-button variant="Brand" onclick={handleSubmit}  name="Pay" label="Pay">
+                    </lightning-button>
+                </div>
+            </lightning-layout>
+ 
+        
+<!-- </lightning-layout> -->
+</lightning-record-edit-form>
+</lightning-card>            
+          
+</template>
